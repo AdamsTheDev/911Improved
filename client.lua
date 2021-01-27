@@ -1,8 +1,9 @@
 ----------- Config ------------
 
 
-chatSuggestion = true
+chatSuggestion = true -- Change to "False" if you would like to turn off the chat suggestion!
 blipTime = 180 -- The amount of time the circle will stay on your map in seconds!
+blipRadius = 175.0 -- Change this to change the radius of how big you want the 911 circle to be!
 
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -51,7 +52,7 @@ AddEventHandler('setBlip', function(name, x, y, z)
 blip = nil
 blips = {}
 
-local blip = AddBlipForRadius(x, y, z, 175.0)
+local blip = AddBlipForRadius(x, y, z, blipRadius)
 
 	SetBlipHighDetail(blip, true)
 	SetBlipColour(blip, 3)
