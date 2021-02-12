@@ -1,15 +1,11 @@
-fx_version "bodacious"
+fx_version 'cerulean'
 
 game "gta5"
 
-files {
-    -- Main
-    'loadscreen.html',
-    'loadscreen.css',
-    'img/bg.jpg', 
-    
-    -- Music
-    'music/music.mp3'
-}
+author '911Improved'
+description 'Creates a /911 system!'
 
-loadscreen 'loadscreen.html'
+files {
+'client.lua',
+'server.lua'
+}
